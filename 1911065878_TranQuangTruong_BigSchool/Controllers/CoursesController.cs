@@ -15,7 +15,8 @@ namespace _1911065878_TranQuangTruong_BigSchool.Controllers
         {
             _dbContext = new ApplicationDbContext();
         }
-        // GET: Courses
+        // GET: Courses0
+        //ahihi
         public ActionResult Create()
         {
             var viewModel = new CourseViewModel
