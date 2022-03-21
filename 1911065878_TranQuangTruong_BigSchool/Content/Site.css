@@ -9,11 +9,19 @@
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
+
+        /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
-.dl-horizontal dt {
-    white-space: normal;
+.navbar-inverse{
+    background-color: aqua;
+    border-color: brown;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+.navbar-inverse .navbar-brand{
+    color: white;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */

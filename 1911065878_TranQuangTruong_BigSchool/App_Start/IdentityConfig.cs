@@ -105,5 +105,10 @@ namespace _1911065878_TranQuangTruong_BigSchool
         {
             return new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
         }
+
+        internal Task PasswordSignInAsync(string email, string password, object rememberMe, bool shouldLockout)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
