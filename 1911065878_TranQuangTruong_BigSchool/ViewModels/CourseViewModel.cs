@@ -8,6 +8,7 @@ namespace _1911065878_TranQuangTruong_BigSchool.ViewModels
 {
     public class CourseViewModel
     {
+        //test commit
         public string Place { get; set; }
         public string Date { get; set; }
         public string Time { get; set; }
