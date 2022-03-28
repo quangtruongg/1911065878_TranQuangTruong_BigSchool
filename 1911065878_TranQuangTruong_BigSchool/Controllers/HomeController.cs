@@ -1,4 +1,5 @@
 ﻿using _1911065878_TranQuangTruong_BigSchool.Models;
+using _1911065878_TranQuangTruong_BigSchool.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -6,7 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace _1911065878_TranQuangTruong_BigSchool.Controllers
+namespace _1911065878_tranquangtruong_BigShool.Controllers
 {
     public class HomeController : Controller
     {
@@ -24,8 +25,6 @@ namespace _1911065878_TranQuangTruong_BigSchool.Controllers
 
             return View(upcommingCourses);
         }
-            
-         
 
         public ActionResult About()
         {

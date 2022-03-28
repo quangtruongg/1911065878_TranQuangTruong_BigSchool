@@ -20,5 +20,5 @@ namespace _1911065878_TranQuangTruong_BigSchool.Models
         [Required]
         public byte CategoryId { get; set; }
     }
+
 }
-    

@@ -7,6 +7,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using _1911065878_TranQuangTruong_BigSchool.Models;
+using _1911065878_tranquangtruong_BigShool.Controllers;
 
 namespace _1911065878_TranQuangTruong_BigSchool.Controllers
 {

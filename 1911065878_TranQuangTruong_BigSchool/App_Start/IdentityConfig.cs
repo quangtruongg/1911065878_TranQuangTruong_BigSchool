@@ -110,5 +110,10 @@ namespace _1911065878_TranQuangTruong_BigSchool
         {
             throw new NotImplementedException();
         }
+
+        internal Task SignInAsync(string email, string password, bool rememberMe, bool shouldLockout)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

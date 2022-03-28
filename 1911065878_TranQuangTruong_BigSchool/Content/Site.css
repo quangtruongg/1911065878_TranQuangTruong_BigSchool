@@ -9,24 +9,49 @@
     padding-right: 15px;
 }
 
-
-        /* Override the default bootstrap behavior where horizontal description lists 
+/* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
-.navbar-inverse{
-    background-color: aqua;
-    border-color: brown;
-}
-.navbar-inverse .navbar-nav > li > a {
-    color: white;
-}
-.navbar-inverse .navbar-brand{
-    color: white;
+.dl-horizontal dt {
+    white-space: normal;
 }
 
+.navbar-inverse {
+    background-color: #0f5053;
+    border-color: #f2ebeb;
+}
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: Owhite;
+    }
+
+a.navbar-inverse .navbar-brand {
+    color: Owhite;
+}
+/*Course layout*/
+.course {
+    list-style: none;
+}
+
+    .course > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+        .course > li .date {
+            text-align: center;
+            background-color: #0f5053;
+            color: white;
+            width: 60px;
+            border-radius: 8px;
+        }
+
+        .course > li .details {
+            position: absolute;
+            top: 0;
+            left: 70px;
+        }
 /* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
+input, select, textarea {
     max-width: 280px;
 }

@@ -9,7 +9,6 @@ namespace _1911065878_TranQuangTruong_BigSchool.ViewModels
 {
     public class CourseViewModel
     {
-        //test commit
         [Required]
         public string Place { get; set; }
         [Required]
@@ -23,7 +22,7 @@ namespace _1911065878_TranQuangTruong_BigSchool.ViewModels
         public IEnumerable<Category> Categories { get; set; }
         public DateTime GetDateTime()
         {
-            return DateTime.Parse(string.Format("{0}{1}", Date, Time));
+            return DateTime.Parse(string.Format("{0} {1}", Date, Time));
         }
     }
 }

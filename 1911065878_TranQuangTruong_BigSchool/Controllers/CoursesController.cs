@@ -9,15 +9,15 @@ using System.Web.Mvc;
 
 namespace _1911065878_TranQuangTruong_BigSchool.Controllers
 {
-    public class CoursesController : Controller
+    public class CourseController : Controller
     {
-        private readonly ApplicationDbContext _dbContext;
-        public CoursesController()
+        public readonly ApplicationDbContext _dbContext;
+        public CourseController()
         {
             _dbContext = new ApplicationDbContext();
         }
-        // GET: Courses0
-        //change
+        // GET: Courses
+        [Authorize]
         public ActionResult Create()
         {
             var viewModel = new CourseViewModel
@@ -31,7 +31,8 @@ namespace _1911065878_TranQuangTruong_BigSchool.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(CourseViewModel viewModel)
         {
-            if(!ModelState.IsValid)
+
+            if (!ModelState.IsValid)
             {
                 viewModel.Categories = _dbContext.Categories.ToList();
                 return View("Create", viewModel);
@@ -46,7 +47,6 @@ namespace _1911065878_TranQuangTruong_BigSchool.Controllers
             _dbContext.Courses.Add(course);
             _dbContext.SaveChanges();
             return RedirectToAction("Index", "Home");
-
         }
     }
 }
